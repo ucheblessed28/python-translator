@@ -14,7 +14,7 @@ async def translate_text():
     print("For example: 'Hello, how are you?'")
     
     # Input the text to be translated
-    text_to_translate = input("\nEnter text: ").strip()
+    text = input("\nEnter text: ").strip()
 
     # Input the source and target languages
     print("\nSupported Language Codes:")
@@ -23,14 +23,14 @@ async def translate_text():
     target_lang = input("Enter target language code (e.g., 'yo' for Yoruba): ").strip()
 
     # Handle empty inputs
-    if not text_to_translate or not source_lang or not target_lang:
+    if not text or not source_lang or not target_lang:
         print("Error: All fields are required. Please try again.")
         return
 
     try:
         # Perform the translation asynchronously
-        translated = await translator.translate(text_to_translate, src=source_lang, dest=target_lang)
-        print("\nOriginal Text: ", text_to_translate)
+        translated = translator.translate(text, src=source_lang, dest=target_lang)
+        print("\nOriginal Text: ", text)
         print("Translated Text: ", translated.text)
 
     except Exception as e:
