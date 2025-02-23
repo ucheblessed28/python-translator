@@ -1,5 +1,5 @@
 
-# Python Asynchronous Translation Software
+# Python Translation Software
 
 This is a simple asynchronous text translation software using Google Translate in Python. It allows users to input text and translate it between different languages using the `googletrans` library.
 
