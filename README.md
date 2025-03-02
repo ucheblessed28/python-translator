@@ -1,7 +1,7 @@
 
 # Python Translation Software
 
-This is a simple asynchronous text translation software using Google Translate in Python. It allows users to input text and translate it between different languages using the `googletrans` library.
+This is a simple asynchronous text translation software using Google Translate in Python. It allows users to input and translate text between different languages using the `googletrans` library.
 
 ## Features
 - Asynchronous translation using `asyncio`
@@ -16,7 +16,7 @@ Ensure you have Python installed (Python 3.7+ is recommended). You also need to 
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/ucheblessed28/translator.git
+   git clone https://github.com/ucheblessed28/python-translator.git
    cd translator
    ```
 
